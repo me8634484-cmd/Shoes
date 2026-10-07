@@ -1,0 +1,752 @@
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #fff;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    width: 100%;
+    background-color: white;
+    padding: 25px 0;
+
+    border-bottom: 1px solid #eee;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.logo span {
+    color: #c99b63;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #c99b63;
+}
+
+.menu {
+    display: none;
+    font-size: 25px;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 650px;
+
+    display: grid;
+    grid-template-columns: 45% 55%;
+
+    background-color: #f5f1eb;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 70px;
+}
+
+.small-title {
+    letter-spacing: 4px;
+    font-size: 13px;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 70px;
+    line-height: 1;
+
+    font-weight: 500;
+
+    margin-bottom: 30px;
+}
+
+.hero-text > p:not(.small-title) {
+    color: #777;
+
+    line-height: 1.8;
+
+    max-width: 450px;
+
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    height: 650px;
+}
+
+
+/* ================= BUTTON ================= */
+
+.btn {
+    display: inline-block;
+
+    width: fit-content;
+
+    background-color: #222;
+    color: white;
+
+    padding: 14px 28px;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #c99b63;
+}
+
+
+/* ================= SECTION HEADING ================= */
+
+.section-heading {
+    text-align: center;
+
+    padding: 100px 0 50px;
+}
+
+.section-heading p {
+    font-size: 12px;
+    letter-spacing: 4px;
+
+    color: #999;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+
+    font-weight: 400;
+
+    margin-top: 15px;
+}
+
+
+/* ================= STYLE ================= */
+
+.style-section {
+    background-color: white;
+}
+
+.style-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+
+    padding-bottom: 100px;
+}
+
+.style-card {
+    text-align: center;
+}
+
+.style-card img {
+    height: 350px;
+
+    transition: 0.4s;
+}
+
+.style-card:hover img {
+    transform: scale(1.03);
+}
+
+.style-card h3 {
+    font-size: 17px;
+
+    font-weight: 400;
+
+    margin-top: 20px;
+
+    text-transform: lowercase;
+}
+
+
+/* ================= SPORT ================= */
+
+.sport-section {
+    display: grid;
+
+    grid-template-columns: 55% 45%;
+
+    min-height: 600px;
+}
+
+.sport-image {
+    height: 600px;
+}
+
+.sport-content {
+    background-color: #f5f1eb;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 80px;
+}
+
+.number {
+    color: #999;
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+}
+
+.sport-content h2 {
+    font-size: 60px;
+
+    font-weight: 400;
+
+    line-height: 1;
+}
+
+.sport-content h3 {
+    font-size: 24px;
+
+    margin-bottom: 25px;
+}
+
+.sport-content p {
+    color: #777;
+
+    line-height: 1.8;
+
+    max-width: 400px;
+
+    margin-bottom: 25px;
+}
+
+.read-more {
+    font-size: 13px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+}
+
+.read-more:hover {
+    color: #c99b63;
+}
+
+
+
+/* ================= BLOG ================= */
+
+.blog-section {
+    padding: 100px 0;
+}
+
+.blog-title {
+    margin-bottom: 50px;
+}
+
+.blog-title p {
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    color: #999;
+}
+
+.blog-title h2 {
+    font-size: 45px;
+
+    font-weight: 400;
+
+    margin-top: 10px;
+}
+
+.blog-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 35px;
+}
+
+.blog-card {
+    border: 1px solid #eee;
+
+    background-color: white;
+}
+
+.blog-card img {
+    height: 250px;
+}
+
+.blog-content {
+    padding: 25px;
+}
+
+.blog-content small {
+    color: #999;
+}
+
+.blog-content h3 {
+    font-size: 25px;
+
+    font-weight: 400;
+
+    margin: 15px 0;
+}
+
+.blog-content p {
+    color: #777;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+.blog-content a {
+    font-size: 13px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.blog-content a:hover {
+    color: #c99b63;
+}
+
+
+/* ================= FEATURES ================= */
+
+.features {
+    background-color: #f5f1eb;
+
+    padding: 80px 0;
+}
+
+.features-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 40px;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature-icon {
+    font-size: 35px;
+
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 18px;
+
+    margin-bottom: 15px;
+}
+
+.feature p {
+    color: #777;
+
+    line-height: 1.7;
+
+    font-size: 14px;
+}
+
+
+/* ================= RELEASE ================= */
+
+.release-section {
+    display: grid;
+
+    grid-template-columns: 55% 45%;
+
+    min-height: 600px;
+}
+
+.release-image {
+    height: 600px;
+}
+
+.release-content {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 80px;
+}
+
+.release-content h2 {
+    font-size: 55px;
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    margin-bottom: 10px;
+}
+
+.release-content h3 {
+    font-size: 25px;
+
+    font-weight: 400;
+
+    margin-bottom: 25px;
+}
+
+.release-content p {
+    color: #777;
+
+    line-height: 1.8;
+
+    max-width: 400px;
+
+    margin-bottom: 25px;
+}
+
+
+/* ================= SKILLS ================= */
+
+.skills-section {
+    background-color: #f5f1eb;
+
+    padding: 100px 0;
+}
+
+.skills-title {
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+.skills-title p {
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    color: #999;
+}
+
+.skills-title h2 {
+    font-size: 40px;
+
+    font-weight: 400;
+
+    margin-top: 15px;
+}
+
+.skill {
+    margin-bottom: 30px;
+}
+
+.skill-info {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+
+    font-size: 14px;
+}
+
+.skill-bar {
+    height: 4px;
+
+    background-color: #ddd;
+}
+
+.skill-progress {
+    height: 100%;
+
+    background-color: #222;
+}
+
+.development {
+    width: 95%;
+}
+
+.engineering {
+    width: 90%;
+}
+
+.design {
+    width: 85%;
+}
+
+
+/* ================= PRESENTATION ================= */
+
+.presentation {
+    display: grid;
+
+    grid-template-columns: 50% 50%;
+
+    min-height: 600px;
+}
+
+.presentation-image {
+    height: 600px;
+}
+
+.presentation-content {
+    background-color: #222;
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 80px;
+}
+
+.presentation-content > p:first-child {
+    color: #aaa;
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+}
+
+.presentation-content h2 {
+    font-size: 45px;
+
+    font-weight: 400;
+
+    line-height: 1.2;
+
+    max-width: 500px;
+
+    margin-bottom: 25px;
+}
+
+.presentation-content p {
+    color: #aaa;
+
+    line-height: 1.8;
+
+    max-width: 450px;
+
+    margin-bottom: 30px;
+}
+
+.presentation-content .btn {
+    background-color: white;
+
+    color: #222;
+}
+
+.presentation-content .btn:hover {
+    background-color: #c99b63;
+
+    color: white;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #111;
+
+    color: white;
+
+    padding: 50px 0;
+
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 25px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+.footer-logo span {
+    color: #c99b63;
+}
+
+footer p {
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    nav {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text {
+        padding: 70px 30px;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .hero-image {
+        height: 450px;
+    }
+
+    .style-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sport-section {
+        grid-template-columns: 1fr;
+    }
+
+    .sport-image {
+        height: 450px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+    }
+
+    .gallery-item {
+        height: 250px;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .release-section {
+        grid-template-columns: 1fr;
+    }
+
+    .release-image {
+        height: 450px;
+    }
+
+    .presentation {
+        grid-template-columns: 1fr;
+    }
+
+    .presentation-image {
+        height: 450px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .section-heading h2 {
+        font-size: 35px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sport-content,
+    .release-content,
+    .presentation-content {
+        padding: 50px 30px;
+    }
+
+    .sport-content h2,
+    .release-content h2 {
+        font-size: 45px;
+    }
+
+    .presentation-content h2 {
+        font-size: 35px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+}
